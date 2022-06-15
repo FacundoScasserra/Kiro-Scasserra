@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./multimedia/Logo.jpg">
+    <script src="https://kit.fontawesome.com/15e78c94a1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/Style.css">
+
+    <title>Kiro Nails</title>
+</head>
+
+<body>
+    <div>
+        <!-- empieza header -->
+        <header class="header">
+            <h1><a href="./index.html"><img src="multimedia/Logo.jpg" width="100" alt="logo"></a></h1>
+            <nav>
+                <ul class="lista">
+                    <li><a href="./index.html">INICIO</a></li>
+                    <li><a href="./trabajos.html">TRABAJOS</a></li>
+                    <li><a href="./precios.html">PRECIOS</a></li>
+                    <li><a href="./service.html">SERVICE</a></li>
+                    <li><a href="./contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- termina header-->
+
+
+        <!-- empieza main -->
+        <main>
+            <div class="main-contacto">
+                <!-- empieza formulario -->
+                <form>
+                    <fieldset class="contacto-formulario">
+                        <div>
+                            <label for="nombre-completo"></label>
+                            <input class="Input-contacto" type="text" placeholder="Nombre completo"
+                                name="nombre-completo">
+                        </div>
+                        <div>
+                            <label for="email"></label>
+                            <input class="Input-contacto" type="email" placeholder="Ejemplo@gmail.com" name="email">
+                        </div>
+                        <div>
+                            <label for="comentario"></label>
+                            <textarea name="comentario" cols="30" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <label for="edad"></label>
+                            <input class="Input-contacto" type="number" name="edad" id="edad" placeholder="Edad"
+                                max="100">
+                        </div>
+                        <div>
+                            <label for="genero"></label>
+                            <select name="genero">
+                                <option value="seleccion">Selecciona tu genero</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Femenino">Femenino</option>
+                                <option value="Otro">Otro</option>
+                                <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="noticias"></label>
+                            <input class="Input-contacto" type="checkbox" name="noticias">
+                            <span>Suscribirme al newsletter</span>
+                        </div>
+                        <div>
+                            <label for="enviar"></label>
+                            <input class="Input-contacto" type="submit" value="enviar" name="enviar">
+                            <label for="borrar"></label>
+                            <input class="Input-contacto" type="reset" value="Borrar">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <!-- termina formulario -->
+        </main>
+
+        <!-- termina main -->
+
+    </div>
+</body>
+
+<!-- empieza footer -->
+<footer class="footer">
+    <div>
+        <a href="https://www.instagram.com/kiro_nails_/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/5491128573875" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+</footer>
+<!-- termina footer -->
+
+</html
