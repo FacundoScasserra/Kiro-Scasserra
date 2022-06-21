@@ -9,19 +9,20 @@
     <!-- Iconos footer -->
     <script src="https://kit.fontawesome.com/15e78c94a1.js" crossorigin="anonymous"></script>
     <!-- Animaciones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/Style.css">
 
     <title>Kiro Nails</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
     <div>
         <!-- empieza header -->
         <header class="header">
-            <h1><a class="Logo" href="./index.html"><img src="multimedia/Logo.jpg" width="100" height="100"
-                        alt="logo"></a></h1>
+            <h1><a class="logo" href="./index.html"><img src="multimedia/Logo.jpg" width="100" height="100" alt="logo"></a></h1>
             <nav>
                 <ul class="lista">
                     <li><a href="./index.html">INICIO</a></li>
@@ -35,60 +36,64 @@
         <!-- termina header-->
 
 
+
         <!-- empieza main -->
         <main>
             <section class="main-index">
-                <h2 class="ejemplos-trabajos animate__animated animate__backInLeft">Estos son algunos de mis trabajitos :)</h2>
-                <div class="imagenes-index">
-                    <section class="imagen-principal5">
-                        <img src="./multimedia/Principal 5.jpg" alt="Imagen principal 5" width="300">
-                    </section>
+                <h2 class="ejemplos-trabajos animate__animated animate__backInLeft">Estos son algunos de mis trabajos
+                </h2>
 
-                    <section class="imagen-principal1">
-                        <img src="./multimedia/Principal 1.jpg" alt="Imagen principal 1" width="300">
-                    </section>
-
-                    <section class="imagen-principal2">
-                        <img src=" ./multimedia/Principal 2.jpg" alt="Imagen principal 2" width="300">
-                    </section>
-
-                    <section class="imagen-principal3">
-                        <img src=" ./multimedia/Principal 3.jpg" alt="Imagen principal 3" width="300">
-                    </section>
-
-                    <section class="imagen-principal4">
-                        <img src=" ./multimedia/Principal 4.jpg" alt="Imagen principal 4" width="300">
-                    </section>
-
-                    <section class="imagen-principal6">
-                        <img src="./multimedia/Principal 6.jpg" alt="Imagen principal 6" width="300">
-                    </section>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-touch=true>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./multimedia/Principal 5.jpg" class="imagenes-index d-block w-100" alt="Imagen principal 5">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./multimedia/Principal 1.jpg" class="imagenes-index d-block w-100" alt="Imagen principal 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./multimedia/Principal 2.jpg" class="imagenes-index d-block w-100" alt="Imagen principal 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./multimedia/Principal 3.jpg" class="imagenes-index d-block w-100" alt="Imagen principal 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./multimedia/Principal 4.jpg" class="imagenes-index d-block w-100" alt="Imagen principal 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./multimedia/Principal 6.jpg" class="imagenes-index d-block w-100" alt="Imagen principal 6">
+                        </div>
+                    </div>
                 </div>
-                <div class="imagenes-index-abajo">
-                    <section class="imagen-principal7">
-                        <img src="./multimedia/Principal 7.jpg" alt="Imagen principal 7" width="300">
-                    </section>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+    </div>
 
-                    <section class="imagen-principal8">
-                        <img src="./multimedia/Principal 8.jpg" alt="Imagen principal 8" width="300">
-                </div>
-            </section>
-            </section>
-
-        </main>
-        <!-- termina main -->
+    </main>
+    <!-- termina main -->
 
 
-        <!-- empieza footer -->
-        <footer class="footer">
-            <div>
-                <a href="https://www.instagram.com/kiro_nails_/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://wa.me/5491128573875" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            </div>
-        </footer>
-        <!-- termina footer -->
+    <!-- empieza footer -->
+    <footer class="footer">
+        <div>
+            <a href="https://www.instagram.com/kiro_nails_/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/5491128573875" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+    <!-- termina footer -->
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
