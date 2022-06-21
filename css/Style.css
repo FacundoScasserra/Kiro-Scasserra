@@ -16,6 +16,7 @@
     flex-direction: row;
     height: 100px;
 }
+
 .header h1 {
     display: flex;
     height: 92px;
@@ -35,12 +36,12 @@ a:visited {
     color: #000000 !important;
 }
 
-.header ul{
-margin: 0;
-padding: 0;
+.header ul {
+    margin: 0;
+    padding: 0;
 }
 
-.lista{
+.lista {
     display: flex;
 }
 
@@ -62,7 +63,7 @@ padding: 0;
 
 .slide {
     width: 30vw;
-    margin: 3% 30% 5% 30% ;
+    margin: 3% 30% 5% 30%;
 
 }
 
@@ -82,7 +83,6 @@ padding: 0;
 /* Main Trabajos */
 
 .main-trabajos {
-    background: #ffe5b9;
     background: linear-gradient(180deg, #ffe5b9 0%, #ffa66f 50%, #fa8072 100%);
     height: fit-content;
     display: flex;
@@ -132,7 +132,7 @@ padding: 0;
 
 /* Main Precios */
 .main-precios {
-    background-color: #fff4e1;
+    background: linear-gradient(180deg, #ffe5b9 0%, #ffa66f 50%, #fa8072 100%);
     height: 75vh;
     display: flex;
     align-items: center;
@@ -140,9 +140,6 @@ padding: 0;
     justify-content: center;
 }
 
-.tabla {
-    padding: 10px;
-}
 
 /* Footer Precios */
 .footer-precios {
@@ -156,7 +153,8 @@ padding: 0;
 /* Main Service */
 
 .main-service {
-    background-color: #fff4e1;
+    background: rgb(255, 229, 185);
+    background: linear-gradient(180deg, rgba(255, 229, 185, 1) 0%, rgba(255, 166, 111, 1) 50%, rgba(255, 166, 111, 1) 100%);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -172,11 +170,13 @@ padding: 0;
     border: #ffbba8 0.5rem solid;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    background-color: #fff4e1a2;
 }
 
 .service-fotos {
     font-size: 1.5rem;
-    background-color: #fff4e1;
+    background: rgb(255, 166, 111);
+    background: linear-gradient(180deg, rgba(255, 166, 111, 1) 0%, rgba(250, 128, 114, 1) 50%, rgba(250, 128, 114, 1) 100%);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -198,7 +198,7 @@ padding: 0;
 /* Main Contacto */
 
 .main-contacto {
-    background-color: #fff4e1;
+    background: linear-gradient(180deg, #ffe5b9 0%, #ffa66f 50%, #fa8072 100%);
     display: grid;
     padding: 3rem;
     justify-content: center;
@@ -209,6 +209,7 @@ padding: 0;
     padding: 1rem;
     display: grid;
     justify-items: center;
+    background-color: #fff4e1a2;
 }
 
 textarea {
@@ -244,26 +245,95 @@ footer i {
 /* Media Query - Mobile Last */
 
 @media (max-width: 768px) {
-    .imagenes-index {
-        grid-template-columns: repeat(2, 1fr);
+    .header {
+        background-color: rgb(255, 187, 168);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        height: 150px;
     }
 
-    .imagenes-index-abajo {
-        background-color: #fff4e1;
+    .main-index {
+        height: 70vh;
+    }
+
+    .ejemplos-trabajos {
+        margin: 2rem;
+    }
+
+    .slide {
+        width: 40vw;
+    }
+
+    .carousel-control-next {
+        height: 30px;
+        position: absolute;
+        top: 60% !important;
+    }
+
+    .carousel-control-prev {
+        height: 30px;
+        position: absolute;
+        top: 60% !important;
+    }
+
+    .main-trabajos {
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen-trabajo {
+        width: 22vw;
+    }
+
+    .esmaltado-semipermanente {
+        font-size: 20px;
+        height: 22rem;
+        width: 22rem;
+        margin: 20px;
+    }
+
+    .kapping-acrilico {
+        font-size: 20px;
+        height: 22rem;
+        width: 22rem;
+        margin: 20px;
+    }
+
+    .soft-gel {
+        font-size: 20px;
+        height: 22rem;
+        width: 22rem;
+        margin: 20px;
     }
 
     .main-service p {
         font-size: 20px;
+    }
+
+    .footer {
+        height: 7rem;
     }
 }
 
 @media (max-width:480px) {
     .header {
         display: grid;
+        height: 180px;
         justify-items: center;
+        justify-content: center;
     }
 
-    .lista {
+    .header h1 {
+        margin-bottom: 20px;
+    }
+
+    .header .lista {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -271,24 +341,16 @@ footer i {
         justify-content: center;
     }
 
-    .imagenes-index {
-        height: 25rem;
+    .main-index {
+        height: 70vh;
     }
 
-    .esmaltado-semipermanente {
-        font-size: 20px;
+    .ejemplos-trabajos {
+        margin: 1rem;
     }
 
-    .kapping-acrilico {
-        font-size: 20px;
-    }
-
-    .soft-gel {
-        font-size: 20px;
-    }
-
-    .imagen-trabajo {
-        width: 250px;
+    .slide {
+        width: 60vw;
     }
 
     .slide img {
@@ -296,4 +358,28 @@ footer i {
         height: 40vh;
     }
 
+    .imagen-trabajo {
+        width: 25vw;
+    }
+
+    .esmaltado-semipermanente {
+        font-size: 15px;
+        height: 16rem;
+        width: 16rem;
+        margin: 20px;
+    }
+
+    .kapping-acrilico {
+        font-size: 15px;
+        height: 16rem;
+        width: 16rem;
+        margin: 20px;
+    }
+
+    .soft-gel {
+        font-size: 15px;
+        height: 16rem;
+        width: 16rem;
+        margin: 20px;
+    }
 }
